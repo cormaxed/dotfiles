@@ -51,7 +51,7 @@ call plug#begin('~/.vim/plugged')
         Plug 'liuchengxu/vim-clap'
         Plug 'vim-scripts/loremipsum'
         Plug 'godlygeek/tabular'
-        Plug 'blindFS/vim-taskwarrior'
+"        Plug 'blindFS/vim-taskwarrior'
         Plug 'preservim/nerdtree'
         Plug 'ojroques/vim-oscyank'
         Plug 'nikvdp/ejs-syntax'
