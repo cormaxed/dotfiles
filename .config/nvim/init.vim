@@ -27,8 +27,19 @@ if has("autocmd")
   augroup END
 endif
 
-        "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-        "Plug 'junegunn/fzf.vim'
+let g:coc_global_extensions = [
+\ 'coc-ultisnips',
+\ 'coc-json',
+\ 'coc-tsserver',
+\ 'coc-html',
+\ 'coc-css',
+\ 'coc-yaml',
+\ 'coc-highlight',
+\ 'coc-python',
+\ 'coc-prettier',
+\ 'coc-spell-checker',
+\ ]
+
 call plug#begin('~/.vim/plugged')
     " Plugins that don't make sense in VsCode
     if !exists('g:vscode')
@@ -37,7 +48,7 @@ call plug#begin('~/.vim/plugged')
         Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
         Plug 'ayu-theme/ayu-vim'
         Plug 'tpope/vim-fugitive'
-        Plug 'neoclide/coc.nvim', {'branch': 'release'}
+        Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }}
         Plug 'nvim-lua/popup.nvim'
         Plug 'nvim-lua/plenary.nvim'
         Plug 'nvim-telescope/telescope.nvim'
