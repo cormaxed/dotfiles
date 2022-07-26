@@ -1,0 +1,4 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": ["typescript", "typescriptreact", "javascript", "css", "html", "prisma"]
+}
+
